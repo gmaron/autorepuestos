@@ -1,11 +1,14 @@
 package modelo;
 
-public abstract class Repuesto {
+public class Repuesto {
 	private int id;
 	private int codigo;
 	private int auto;
 	private int modelo;
 	private String descripcion;
+	
+	public Repuesto(){};
+	
 	public int getId() {
 		return id;
 	}

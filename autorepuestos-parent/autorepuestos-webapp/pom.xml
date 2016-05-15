@@ -82,7 +82,28 @@
 		<groupId>org.apache.tiles</groupId>
 		<artifactId>tiles-extras</artifactId>
 		<version>3.0.5</version>
-	</dependency>	
+	</dependency>
+
+
+	<!-- http://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
+	<dependency>
+		<groupId>javax.servlet.jsp.jstl</groupId>
+		<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+		<version>1.2.1</version>
+	</dependency>
+
+	<!-- http://mvnrepository.com/artifact/taglibs/standard -->
+	<dependency>
+		<groupId>taglibs</groupId>
+		<artifactId>standard</artifactId>
+		<version>1.1.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.autorepuestos.turko</groupId>
+		 <artifactId>autorepuestos-modelo</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+	</dependency>
 	
 	</dependencies>
  
