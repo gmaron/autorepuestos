@@ -9,6 +9,12 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+.Servers/
+Servers/
+.lib/
+lib/
+.libraries/
+libraries/
 
 # Eclipse Core
 .project
