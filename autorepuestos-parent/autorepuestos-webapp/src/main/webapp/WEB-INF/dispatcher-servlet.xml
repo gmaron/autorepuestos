@@ -14,7 +14,31 @@
 	http://www.springframework.org/schema/util 
 	http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
-	<bean class="controllerWebApp.AutoRepController" />
-	<context:component-scan base-package="controllerWebApp" />	
-		
+	<context:component-scan base-package="com.springApp.ControllerWeb"/>
+
+	
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/jsp/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<!-- for Tiles -->
+	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver"
+		id="viewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles3.TilesView" />
+	</bean>
+	
+		<bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer"
+			id="tilesConfigurer">
+			<property name="definitions" value="/WEB-INF/tiles-definitions.xml" />
+		</bean>
+	
+	
+			
 </beans>

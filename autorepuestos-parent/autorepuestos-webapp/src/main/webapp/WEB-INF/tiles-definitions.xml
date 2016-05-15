@@ -1,0 +1,20 @@
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+  
+<tiles-definitions>
+    <definition name="autorepuestos.homepage"
+        template="/WEB-INF/pages/layout/template_layout.jsp">
+        <put-attribute name="title" value="Autorepuestos" />
+        <put-attribute name="header" value="" />
+        <put-attribute name="menu" value="" />
+        <put-attribute name="body" value="/WEB-INF/pages/body/bodyIndex.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/pages/footer/footer.jsp" />
+    </definition>
+ 
+    <definition name="homepage" extends="autorepuestos.homepage">
+        <put-attribute name="title" value="Autorepuestos" />
+        <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+ 
+</tiles-definitions>

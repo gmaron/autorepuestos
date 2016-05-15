@@ -5,4 +5,4 @@
  * @author Gaston Maron
  *
  */
-package webConfig;
+package com;
